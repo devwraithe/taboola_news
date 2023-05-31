@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../core/theme/app_theme.dart';
 import '../presentation/screens/home.dart';
 
 class TaboolaNews extends StatelessWidget {
@@ -7,9 +8,10 @@ class TaboolaNews extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Taboola News',
-      home: HomeScreen(),
+      home: const HomeScreen(),
+      theme: AppTheme.lightTheme,
     );
   }
 }
